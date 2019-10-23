@@ -11,6 +11,10 @@ const performCalculation = {
 
     '-': (firstOperand, secondOperand) => firstOperand - secondOperand,
 
+    '*': (firstOperand, secondOperand) => firstOperand * secondOperand,
+
+    '/': (firstOperand, secondOperand) => firstOperand / secondOperand,
+
     '=': (firstOperand, secondOperand) => secondOperand
 };
 
@@ -104,3 +108,4 @@ keys.addEventListener('click', (event) => {
     inputDigit(target.value);
     updateDisplay();
 });
+
