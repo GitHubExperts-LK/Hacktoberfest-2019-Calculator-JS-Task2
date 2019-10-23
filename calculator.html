@@ -51,6 +51,7 @@
 
         button:hover {
             background-color: #eaeaea;
+            transition: 0.5s;
         }
 
         .operator {
@@ -85,6 +86,10 @@
             grid-gap: 20px;
             padding: 20px;
         }
+        .num {
+            color: #000;
+            background-color: #c5abac;
+        }
     </style>
 </head>
 
@@ -95,28 +100,28 @@
 
         <div class="calculator-keys">
 
-            <button type="button" class="operator" value="+">+</button>
-            <button type="button" class="operator" value="-">-</button>
-            <button type="button" class="operator" value="*">&times;</button>
-            <button type="button" class="operator" value="/">&divide;</button>
+            <button type="button" class="operator num" value="+">+</button>
+            <button type="button" class="operator num" value="-">-</button>
+            <button type="button" class="operator num" value="*">&times;</button>
+            <button type="button" class="operator num" value="/">&divide;</button>
 
-            <button type="button" value="7">7</button>
-            <button type="button" value="8">8</button>
-            <button type="button" value="9">9</button>
-
-
-            <button type="button" value="4">4</button>
-            <button type="button" value="5">5</button>
-            <button type="button" value="6">6</button>
+            <button type="button" class="num" value="7">7</button>
+            <button type="button" class="num" value="8">8</button>
+            <button type="button" class="num" value="9">9</button>
 
 
-            <button type="button" value="1">1</button>
-            <button type="button" value="2">2</button>
-            <button type="button" value="3">3</button>
+            <button type="button" class="num" value="4">4</button>
+            <button type="button" class="num" value="5">5</button>
+            <button type="button" class="num" value="6">6</button>
 
 
-            <button type="button" value="0">0</button>
-            <button type="button" class="decimal" value=".">.</button>
+            <button type="button" class="num" value="1">1</button>
+            <button type="button" class="num" value="2">2</button>
+            <button type="button" class="num" value="3">3</button>
+
+
+            <button type="button" class="num" value="0">0</button>
+            <button type="button" class="decimal num" value=".">.</button>
             <button type="button" class="all-clear" value="all-clear">AC</button>
 
             <button type="button" class="equal-sign operator" value="=">=</button>
